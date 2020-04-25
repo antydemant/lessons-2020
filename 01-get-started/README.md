@@ -67,4 +67,7 @@ All other values are truthy
 https://www.sitepoint.com/javascript-truthy-falsy/
 
 
-Nice to read: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+Nice to read: 
+https://javascript.info/
+https://github.com/denysdovhan/wtfjs
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects

@@ -11,6 +11,7 @@ console.log('min precise integer is: ' + minInteger);
 
 let value = 5;
 value = 3.14159;
+value.
 value = new Number(100);
 value = value + 1; // 101
 let biggestNum = Number.MAX_VALUE;
