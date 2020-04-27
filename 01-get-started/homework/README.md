@@ -19,7 +19,7 @@ For example: `'How you doin'?', Joey said'.`
 3. console.log(message)
 3. console.warn(message)
 4. console.error(message)
-5 and so on.
+5. and so on. (try to look at the `console.log(console)`)
 
 # Create function to sort odd numbers in array
 
