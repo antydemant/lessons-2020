@@ -19,7 +19,7 @@ For example: `'How you doin'?', Joey said'.`
 3. console.log(message)
 3. console.warn(message)
 4. console.error(message)
-5 and so on.
+5. and so on. (try to look at the `console.log(console)`)
 
 # Create function to sort odd numbers in array
 
@@ -61,8 +61,8 @@ function getRandomHexColor(arr) {
 
 #### Tips:
 1. [Math.floor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor), [Math.random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) (try to generate 2^24 random number)
-2. [Number.prototype.toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString) (try to convert random number to 16-bit number) (to add some zeros at the beginning of the string, e.g #f724 -> #00f724, #7d2d8 -> #07d2d8 )
+2. [Number.prototype.toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toString) (try to convert random number to 16-bit number)
 3. [Array.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) (iterate the original "arr" array )
-4. [String.prototype.padStart](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart)
+4. [String.prototype.padStart](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart) (to add some zeros at the beginning of the string, e.g #f724 -> #00f724, #7d2d8 -> #07d2d8 )
 
 
