@@ -52,7 +52,7 @@ Your turn :)
 
 # Let's reinvent jQuery: Mini Edition :) ("this" + Closure)
 
-UPD: Please take a look at the simililar task with solution here https://javascript.info/task/chain-calls 
+UPD: Please take a look at the similar task here https://javascript.info/task/chain-calls 
 UPD: Here is the archive with initial project: [Homework-Archive.zip](Homework-Archive.zip)
 
 Please copy file content from here: [index.html](index.html)
