@@ -50,4 +50,72 @@ Your turn :)
 
 ![Shia LaBeouf](https://i.imgur.com/i4Ve3If.png)
 
-# One more task - TBD tomorrow, sorry for inconvenience :)
+# Let's reinvent jQuery: Mini Edition :) ("this" + Closure)
+
+UPD: Please take a look at the simililar task with solution here https://javascript.info/task/chain-calls 
+UPD: Here is the archive with initial project: [Homework-Archive.zip](Homework-Archive.zip)
+
+Please copy file content from here: [index.html](index.html)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Including script below -->
+    <script src="script.js"></script>
+    <style>
+        .custom-class {
+            background-color: aqua;
+        }
+
+        .redundant-custom-class {
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="my-element" class="redundant-custom-class">
+        <img src="cat.jpg"/>
+    </div>
+</body>
+</html>
+```
+
+and one more file which is also located near the index.html: [script.js](script.js)
+```javascript
+function jQueryMini(element) {
+    let initializedElement = document.querySelector(element);
+
+    // Use your imagination below :)
+    return {
+        css: /* ...some magic... */,
+        addClass: /* ...some magic... */,
+        removeClass: /* ...some magic... */,
+        html: /* ...some magic... */,
+    }
+}
+
+
+window.onload = function() { // execute our code after page loaded
+    // Usage below
+    const myElement = jQueryMini('#my-element')
+    .css('padding', '150px')
+    .css('margin', '150px')
+    .css('border', '2px')
+    .css('border-color', 'black')
+    .css('border-style', 'solid')
+    .removeClass('redundant-custom-class')
+    .addClass('custom-class')
+    .css('text-align', 'center');
+
+    console.log(myElement.html()); /* Output:   <div id="my-element" class="custom-class" style="padding: 150px; margin: 150px; border: 2px solid black; text-align: center;">
+                                                    <img src="cat.jpg">
+                                                </div>
+                                    */
+}
+```
+
+Result:
+![https://i.imgur.com/lK7hBs7.png](https://i.imgur.com/lK7hBs7.png)
