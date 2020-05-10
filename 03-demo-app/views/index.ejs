@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+        .grid {
+            display: none;
+            padding-top: 50px;
+            margin: 0 auto;
+        }
+
+        form {
+            margin: auto;
+            width: 50%;
+        }
+
+        form input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 70%;
+            margin: auto;
+            background: #f1f1f1;
+        }
+
+            /* Style the submit button */
+        form button {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none; /* Prevent double borders */
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #0b7dda;
+        }
+
+        /* Clear floats */
+        form::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        img { 
+            position: relative;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .2s ease;
+            background-color: #f79071;
+        }
+
+        .overlay:hover {
+            opacity: 0.9;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form method="GET" action="/">
+        <input type="text" placeholder="#одуванчиктріп" name="search">
+        <button type="submit">Search</i></button>
+    </form>
+    <div class="grid">
+        <% if (items) { %>
+            <% items.forEach(function(item){ %>
+                <div class="grid-item">
+                    <img width="200"src="<%= item.node.thumbnail_src %>" />
+                    <div class="overlay">
+                        <div class="text">Likes: <%= item.node.edge_liked_by.count %></div>
+                      </div>
+                </div> 
+            <% }); %>
+        <% } %>
+    </div>
+</body>
+</html>
